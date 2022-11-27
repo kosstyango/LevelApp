@@ -1,6 +1,7 @@
 package com.example.levelandroid
 
 import android.content.Context
+import android.content.pm.ActivityInfo
 import android.graphics.Color
 import android.hardware.Sensor
 import android.hardware.SensorEvent
@@ -18,6 +19,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE) //фиксируем горизонтальную работу приложения
+
         val tvSensor = findViewById<TextView>(R.id.tvSensor)
         val lRotation = findViewById<LinearLayout>(R.id.lRotation)
         sManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
