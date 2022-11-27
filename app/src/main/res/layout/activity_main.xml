@@ -15,18 +15,19 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvSensor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="90"
+        android:text=""
         android:textColor="#ECE8E8"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="74dp" />
+        tools:layout_editor_absoluteY="74dp"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:id="@+id/leftLevel"
@@ -36,7 +37,7 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/lRotation"
@@ -49,6 +50,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/leftLevel"
         app:layout_constraintEnd_toStartOf="@+id/rightLevel"
         app:layout_constraintStart_toEndOf="@+id/leftLevel"
-        app:layout_constraintTop_toTopOf="@+id/leftLevel"></LinearLayout>
+        app:layout_constraintTop_toTopOf="@+id/leftLevel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
